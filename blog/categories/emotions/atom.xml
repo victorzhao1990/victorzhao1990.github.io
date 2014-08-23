@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Victor Zhao's Blog]]></title>
-  <link href="http://victorzhao1990.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Emotions | Victor Zhao's Blog]]></title>
+  <link href="http://victorzhao1990.github.io/blog/categories/emotions/atom.xml" rel="self"/>
   <link href="http://victorzhao1990.github.io/"/>
   <updated>2014-08-23T12:11:00-04:00</updated>
   <id>http://victorzhao1990.github.io/</id>
