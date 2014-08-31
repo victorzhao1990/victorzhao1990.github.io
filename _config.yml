@@ -4,7 +4,7 @@
 
 url: http://victorzhao1990.github.io
 title: Victor Zhao's Blog
-subtitle: Another way to display myself
+subtitle: Another way to show who I am
 author: Victor Zhao
 simple_search: https://www.google.com/search
 description:
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:xinyunzhao@msn.com
+email: xinyunzhao@msn.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
