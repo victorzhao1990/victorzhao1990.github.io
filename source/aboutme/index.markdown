@@ -19,10 +19,14 @@ Tel: 1 (626) 436-3098
 
 <http://cn.linkedin.com/pub/xinyun-victor-zhao/58/a20/568/>
 
+#### OBJECTIVE
+Summer internship in software engineering, which utilizes my skills in applications of machine learning.
+
 #### EDUCATION
 *MSc in Computer Science, at Language Technology Institute, Carnegie Mellon University, expected May 2016*
 
-*Bachelor of Engineering, Computer Science and Technology Dalian University of Technology, China, June 2013*- Overall Ranking: 17/103
+*Bachelor of Engineering, Computer Science and Technology Dalian University of Technology, China, June 2013*- Overall Ranking: 17/103#### SKILLS
+Java, Python, Shell Scripting Language, C, Matlab , Markdown, LaTeX
 #### PROFESSIONAL EXPERIENCE
 
 *Intern at Avaya Inc. Jun. 2012 – Dec. 2012*
@@ -50,7 +54,7 @@ Learning Excellence Award (Second), Dalian University of Technology - Oct. 2012
 
 The CCF Outstanding Undergraduate Award, China Computer Federation - Oct. 2012
 
-#### CERTIFICATE
+#### PROFESSIONAL CERTIFICATES
 
 Oracle Certified Associate, Java SE 7 Programmer - Oct. 2013
 
