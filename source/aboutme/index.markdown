@@ -25,7 +25,8 @@ Summer internship in software engineering, which utilizes my skills in applicati
 #### EDUCATION
 *MSc in Computer Science, at Language Technology Institute, Carnegie Mellon University, expected May 2016*
 
-*Bachelor of Engineering, Computer Science and Technology Dalian University of Technology, China, June 2013*- Overall Ranking: 17/103#### SKILLS
+*BEng., Computer Science and Technology, Dalian University of Technology, China, June 2013*
+#### SKILLS
 Java, Python, Shell Scripting Language, C, Matlab , Markdown, LaTeX
 #### PROFESSIONAL EXPERIENCE
 

@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Finally, the go-mode!"
+date: 2014-09-11 12:17:41 -0400
+comments: true
+categories: 
+---
+
+Efforts have been made.
+![Go-mode](/images/go-mode.png)
