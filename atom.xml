@@ -4,7 +4,7 @@
   <title><![CDATA[Victor Zhao's Blog]]></title>
   <link href="http://victorzhao1990.github.io/atom.xml" rel="self"/>
   <link href="http://victorzhao1990.github.io/"/>
-  <updated>2014-09-28T22:23:26-04:00</updated>
+  <updated>2014-10-02T12:34:49-04:00</updated>
   <id>http://victorzhao1990.github.io/</id>
   <author>
     <name><![CDATA[Victor Zhao]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Go for Ten Interviews]]></title>
+    <link href="http://victorzhao1990.github.io/blog/2014/10/02/go-for-ten-interviews/"/>
+    <updated>2014-10-02T12:32:52-04:00</updated>
+    <id>http://victorzhao1990.github.io/blog/2014/10/02/go-for-ten-interviews</id>
+    <content type="html"><![CDATA[<p>Just have failed the first two. There are still eight left.</p>
+
+<p>You are going to fail the first five, and nail the last five, which are FLAG and so on.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Behaviour Is Traded by Sacrificing]]></title>
