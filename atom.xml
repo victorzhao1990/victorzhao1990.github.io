@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Victor Zhao's Blog]]></title>
+  <link href="http://victorzhao1990.github.io/atom.xml" rel="self"/>
+  <link href="http://victorzhao1990.github.io/"/>
+  <updated>2014-10-16T17:39:42-04:00</updated>
+  <id>http://victorzhao1990.github.io/</id>
+  <author>
+    <name><![CDATA[Victor Zhao]]></name>
+    <email><![CDATA[xinyunzhao@msn.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Screened Based Simulation Prototype 1]]></title>
+    <link href="http://victorzhao1990.github.io/blog/2014/10/16/screened-based-simulation-prototype-1/"/>
+    <updated>2014-10-16T17:36:02-04:00</updated>
+    <id>http://victorzhao1990.github.io/blog/2014/10/16/screened-based-simulation-prototype-1</id>
+    <content type="html"><![CDATA[<p><a href="sbs/sbs-proto1.html">SBS_proto1</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Go for Ten Interviews]]></title>
+    <link href="http://victorzhao1990.github.io/blog/2014/10/02/go-for-ten-interviews/"/>
+    <updated>2014-10-02T12:32:52-04:00</updated>
+    <id>http://victorzhao1990.github.io/blog/2014/10/02/go-for-ten-interviews</id>
+    <content type="html"><![CDATA[<p>Just have failed the first two. There are still eight left.</p>
+
+<p>You are going to fail the first five, and nail the last five, which are FLAG and so on.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Behaviour Is Traded by Sacrificing]]></title>
+    <link href="http://victorzhao1990.github.io/blog/2014/09/28/behaviour-is-traded-by-sacrificing/"/>
+    <updated>2014-09-28T22:18:43-04:00</updated>
+    <id>http://victorzhao1990.github.io/blog/2014/09/28/behaviour-is-traded-by-sacrificing</id>
+    <content type="html"><![CDATA[<p>Dignity could not be harmed by the injury that you get. On the contrary, injuries only make you stronger. As long as it has not killed you, you are just becoming strong than before.</p>
+
+<p>What doesn&rsquo;t kill you, simply makes you, stranger, but, more importantly, much stronger.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Finally, the Go-mode!]]></title>
+    <link href="http://victorzhao1990.github.io/blog/2014/09/11/finally/"/>
+    <updated>2014-09-11T12:17:41-04:00</updated>
+    <id>http://victorzhao1990.github.io/blog/2014/09/11/finally</id>
+    <content type="html"><![CDATA[<p>Efforts have been made.
+<img src="http://victorzhao1990.github.io/images/go-mode.png" alt="Go-mode" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[C U Tomorrow.]]></title>
+    <link href="http://victorzhao1990.github.io/blog/2014/09/04/c-u-tomorrow/"/>
+    <updated>2014-09-04T19:55:58-04:00</updated>
+    <id>http://victorzhao1990.github.io/blog/2014/09/04/c-u-tomorrow</id>
+    <content type="html"><![CDATA[<p>Never say no to the big thing that hasn&rsquo;t come yet.</p>
+
+<p><img src="http://victorzhao1990.github.io/images/boeing_logo-copy.gif" alt="Boeing Icon" /></p>
+]]></content>
+  </entry>
+  
+</feed>
