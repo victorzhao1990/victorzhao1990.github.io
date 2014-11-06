@@ -4,7 +4,11 @@
   <title><![CDATA[Victor Zhao's Blog]]></title>
   <link href="http://victorzhao1990.github.io/atom.xml" rel="self"/>
   <link href="http://victorzhao1990.github.io/"/>
+<<<<<<< HEAD
   <updated>2014-11-06T11:28:20-05:00</updated>
+=======
+  <updated>2014-10-16T17:39:42-04:00</updated>
+>>>>>>> f670e4f3ed4cc2ee3120a78b47c26e8f37db3da3
   <id>http://victorzhao1990.github.io/</id>
   <author>
     <name><![CDATA[Victor Zhao]]></name>
@@ -14,6 +18,7 @@
 
   
   <entry>
+<<<<<<< HEAD
     <title type="html"><![CDATA[LeetCode Max Points on a Line]]></title>
     <link href="http://victorzhao1990.github.io/blog/2014/11/06/leetcode-max-points-on-a-line/"/>
     <updated>2014-11-06T11:21:41-05:00</updated>
@@ -112,6 +117,13 @@ public class Solution {
     }
 }
 </code></pre>
+=======
+    <title type="html"><![CDATA[Screened Based Simulation Prototype 1]]></title>
+    <link href="http://victorzhao1990.github.io/blog/2014/10/16/screened-based-simulation-prototype-1/"/>
+    <updated>2014-10-16T17:36:02-04:00</updated>
+    <id>http://victorzhao1990.github.io/blog/2014/10/16/screened-based-simulation-prototype-1</id>
+    <content type="html"><![CDATA[<p><a href="sbs/sbs-proto1.html">SBS_proto1</a></p>
+>>>>>>> f670e4f3ed4cc2ee3120a78b47c26e8f37db3da3
 ]]></content>
   </entry>
   
