@@ -1,7 +1,0 @@
-﻿$axure.loadCurrentPage(
-(function() {
-    var _ = function() { var r={},a=arguments; for(var i=0; i<a.length; i+=2) r[a[i]]=a[i+1]; return r; }
-    var _creator = function() { return _(b,c,d,e,f,g,h,[i],j,_(k,l,m,n,o,p),q,_(),r,_(s,t,u,v,w,x,y,_(),z,_(A,B,C,D,E,_(F,G,H,I),J,null,K,L,M,L,N,O,P,null,Q,R,S,T,U,V,W,R),X,_(),Y,_(Z,_(ba,bb,bc,[_(ba,bd,be,g,bf,[_(bg,bh,ba,bi,bj,_(bk,r,b,bl,bm,bn),bo,bp)])])),bq,_(br,[])),bs,_(),bt,_());}; 
-var b="url",c="knife.html",d="generationDate",e=new Date(1413492788330.82),f="isCanvasEnabled",g=false,h="variables",i="OnLoadVariable",j="defaultBackgroundImageInfo",k="path",l="images/knife/bg.jpg",m="width",n=5760,o="height",p=3840,q="viewIdToBackgroundImageInfo",r="page",s="packageId",t="331a4a2ffeaa4d31a77934e1458f2948",u="type",v="Axure:Page",w="name",x="Knife",y="notes",z="style",A="baseStyle",B="627587b6038d43cca051c114ac41ad32",C="pageAlignment",D="near",E="fill",F="fillType",G="solid",H="color",I=0xFFFFFFFF,J="image",K="imageHorizontalAlignment",L="center",M="imageVerticalAlignment",N="imageRepeat",O="cover",P="favicon",Q="sketchFactor",R="0",S="colorStyle",T="appliedColor",U="fontName",V="Applied Font",W="borderWidth",X="adaptiveStyles",Y="interactionMap",Z="onClick",ba="description",bb="OnClick",bc="cases",bd="Case 1",be="isNewIfGroup",bf="actions",bg="action",bh="linkWindow",bi="Open Home in Current Window",bj="target",bk="targetType",bl="home.html",bm="includeVariables",bn=true,bo="linkType",bp="current",bq="diagram",br="objects",bs="masters",bt="objectPaths";
-return _creator();
-})());
