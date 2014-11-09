@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>LeetCode Max Points on a Line - Victor Zhao's Blog</title>
+  <title>LeetCode Decode Ways - Victor Zhao's Blog</title>
   <meta name="author" content="Victor Zhao">
 
   
-  <meta name="description" content="https://oj.leetcode.com/discuss/9929/a-java-solution-with-notes import java.util.HashMap;
-import java.lang.Math; // Definition for a point.
-class &hellip;">
+  <meta name="description" content="I encounter this problem in an interview with “F” company. Back then, I was not aware of anything that related to Dynamic Programming. After a long &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ class &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://victorzhao1990.github.io/blog/2014/11/06/leetcode-max-points-on-a-line">
+  <link rel="canonical" href="http://victorzhao1990.github.io/blog/2014/11/09/leetcode-decode-ways">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Victor Zhao's Blog" type="application/atom+xml">
@@ -71,7 +69,7 @@ class &hellip;">
   
   <header>
     
-      <h1 class="entry-title">LeetCode Max Points on a Line</h1>
+      <h1 class="entry-title">LeetCode Decode Ways</h1>
     
     
       <p class="meta">
@@ -80,104 +78,48 @@ class &hellip;">
 
 
 
-<time class='entry-date' datetime='2014-11-06T11:21:41-05:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:21 am</span></time>
+<time class='entry-date' datetime='2014-11-09T15:07:53-05:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>3:07 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>https://oj.leetcode.com/discuss/9929/a-java-solution-with-notes</p>
+<div class="entry-content"><p>I encounter this problem in an interview with “F” company. Back then, I was not aware of anything that related to <strong>Dynamic Programming</strong>. After a long time of study this technique in Prof. Kingsford’s course, I am gradually becoming a master in it. Enjoy it!</p>
 
-<pre><code>import java.util.HashMap;
-import java.lang.Math;
+<p>http://www.ninechapter.com/solutions/decode-ways/</p>
 
-// Definition for a point.
-class Point {
-	int x;
-	int y;
-	Point() { x = 0; y = 0; }
-	Point(int a, int b) { x = a; y = b; }
-}
-/*  
-* 
- 	*  O(n^2) time.
- 	*
- 	*  A line is determined by two factors,say y=ax+b
- 	*
- 	*  If two points(x1,y1) (x2,y2) are on the same line(Of course).
- 	*  Consider the gap between two points.
- 	*  We have (y2-y1)=a(x2-x1),a=(y2-y1)/(x2-x1) a is a rational, b is canceled since b is a constant
- 	*  If a third point (x3,y3) are on the same line. So we must have y3=ax3+b
- 	*  Thus,(y3-y1)/(x3-x1)=(y2-y1)/(x2-x1)=a
- 	*  Since a is a rational, there exists y0 and x0, y0/x0=(y3-y1)/(x3-x1)=(y2-y1)/(x2-x1)=a
- 	*  So we can use y0&amp;x0 to track a line;
- 	*/
+<p>In this problem, the optimal structure can be defined that <em>num[i] is the number of different string representations for all the number before and with ith number included</em>. Therefore, we have <script type="math/tex">num[i] = \begin{cases}num[i] + num[i - 1] \\ \qquad \text{if number in postion[i - 1] match the letter in alphabet} \\ num[i] + num[i - 2] \\ \qquad \text{if number in postion[i - 2] and in postion[i - 1] form a letter, e.g. 26 means 'z'}\end{cases}</script>. Moreover, it also needs a base case to main the coherence of indices since we use one variable to trace both the num array and individual character in input number string. The base case is when i equals to 0, num[0] is 1.	 </p>
+
+<pre><code>/**
+*
+*/
 public class Solution {
-	// Point[] points;
-	public int maxPoints(Point[] points) {
-    	if (points == null) {
+	public int numDecodings(String s) {
+    	if (s == null || s.length() == 0) {
         	return 0;
     	}
-    
-    	// If there are only two points or less, just return the number of these points.
-    	if (points.length &lt;= 2) {
-        	return points.length;
-    	}
-    	// The value that is used to return for the final number of points
-    	int result = 0;
-    	// Store the number points in a variable
-    	int n = points.length;
-    	// Use a nested HashMap to store the information for x0, y0 and the number of points that reside on this line.
-    	// The format is HashMap&lt;x0, HashMap&lt;y0, number&gt;&gt;
-    	HashMap&lt;Integer, HashMap&lt;Integer, Integer&gt;&gt; map = new HashMap&lt;&gt;();
-    	for (int i = 0; i &lt; n; i++) {
-        	// If there are several points that have the same coordinates, use a counter called overlap to record it.
-        	int overlap = 0;
-        	// Since it use only one nested hashmap to store the information of the point starting from one specific i index pairing with 
-        	// all other points starting from i + 1 to n, the map need to be refresh during the update of i. 
-        	map.clear();
-        	// Use variable max to record the maximum value in every iteration/lookup in the hashmap
-        	int max = 0;
-        	for (int j = i + 1; j &lt; n; j++) {
-            	int x = points[i].x - points[j].x;
-            	int y = points[i].y - points[j].y;
-            	if ((x == 0) &amp;&amp; (y == 0)) {
-               		overlap++;
-                	continue;
-            	}
-            	// Use gcd to normalize the slope for each point
-            	int gcd = generateGCD(x, y);
-            	if (gcd != 0) {
-                	x /= gcd;
-                	y /= gcd;
-            	}
-            	// If map doesn't include one specific point, add it.
-            	if (map.containsKey(x)) {
-               		if (map.get(x).containsKey(y)) {
-                    	map.get(x).put(y, map.get(x).get(y) + 1);
-                	} else {
-                   		map.get(x).put(y, 1);
-                	}
-            	} else {
-                	HashMap&lt;Integer, Integer&gt; innerMap = new HashMap&lt;&gt;();
-                	innerMap.put(y, 1);
-                	map.put(x, innerMap);
-            	}
-            	max = Math.max(max, map.get(x).get(y));
+    	int[] num = new int[s.length() + 1];
+    	num[0] = 1;
+    	num[1] = s.charAt(0) != '0' ? 1 : 0;
+    	for (int i = 2; i &lt;= s.length(); i++) {
+        	if (s.charAt(i - 1) != '0') {
+            	num[i] += num[i - 1];
         	}
-        	// The number of overlap should be included.
-        	result = Math.max(result, max + overlap + 1);
+        
+        	int twoDigits = (s.charAt(i - 2) - '0') * 10 + (s.charAt(i - 1) - '0');
+        	if ((twoDigits &lt;= 26) &amp;&amp; (twoDigits &gt;= 10)) {
+            	num[i] += num[i - 2];
+        	}
+        	// Use to trace the current status
+        	// System.out.println("Current letter is" + s.charAt(i - 1));
+        	// System.out.println("num" + i + "=" + num[i]);
     	}
-    	return result;
+    	return num[s.length()];
 	}
-
-	private int generateGCD(int a, int b) {
-    	if (b == 0) {
-        	return a;
-    	} else {
-        	return generateGCD(b, a % b);
-    	}
+	// Test main method
+	public static void main(String [] args) {
+    	System.out.println((new Solution()).numDecodings(args[0]));
 	}
 }
 </code></pre>
@@ -196,7 +138,7 @@ public class Solution {
 
 
 
-<time class='entry-date' datetime='2014-11-06T11:21:41-05:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:21 am</span></time>
+<time class='entry-date' datetime='2014-11-09T15:07:53-05:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>3:07 pm</span></time>
       
 
 
@@ -204,7 +146,7 @@ public class Solution {
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://victorzhao1990.github.io/blog/2014/11/06/leetcode-max-points-on-a-line/" data-via="" data-counturl="http://victorzhao1990.github.io/blog/2014/11/06/leetcode-max-points-on-a-line/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://victorzhao1990.github.io/blog/2014/11/09/leetcode-decode-ways/" data-via="" data-counturl="http://victorzhao1990.github.io/blog/2014/11/09/leetcode-decode-ways/" >Tweet</a>
   
   
   
@@ -213,10 +155,8 @@ public class Solution {
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/10/02/go-for-ten-interviews/" title="Previous Post: Go for Ten Interviews">&laquo; Go for Ten Interviews</a>
+        <a class="basic-alignment left" href="/blog/2014/11/06/leetcode-max-points-on-a-line/" title="Previous Post: LeetCode Max Points on a Line">&laquo; LeetCode Max Points on a Line</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/11/09/leetcode-decode-ways/" title="Next Post: LeetCode Decode Ways">LeetCode Decode Ways &raquo;</a>
       
     </p>
   </footer>
@@ -282,8 +222,8 @@ public class Solution {
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://victorzhao1990.github.io/blog/2014/11/06/leetcode-max-points-on-a-line/';
-        var disqus_url = 'http://victorzhao1990.github.io/blog/2014/11/06/leetcode-max-points-on-a-line/';
+        var disqus_identifier = 'http://victorzhao1990.github.io/blog/2014/11/09/leetcode-decode-ways/';
+        var disqus_url = 'http://victorzhao1990.github.io/blog/2014/11/09/leetcode-decode-ways/';
         var disqus_script = 'embed.js';
       
     (function () {
