@@ -33,7 +33,8 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
+# markdown: rdiscount
+markdown: kramdown
 rdiscount:
   extensions:
     - autolink
@@ -91,7 +92,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: victorzhao1990githubio
 disqus_show_comment_count: false
 
 # Google Analytics
