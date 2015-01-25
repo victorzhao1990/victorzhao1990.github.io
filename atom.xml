@@ -4,7 +4,7 @@
   <title><![CDATA[Victor Zhao's Blog]]></title>
   <link href="http://victorzhao1990.github.io/atom.xml" rel="self"/>
   <link href="http://victorzhao1990.github.io/"/>
-  <updated>2014-11-09T15:42:01-05:00</updated>
+  <updated>2015-01-24T20:00:47-05:00</updated>
   <id>http://victorzhao1990.github.io/</id>
   <author>
     <name><![CDATA[Victor Zhao]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Use Hortonworks Sandbox to Run a Mapreduce Program?]]></title>
+    <link href="http://victorzhao1990.github.io/blog/2015/01/24/how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/"/>
+    <updated>2015-01-24T20:00:09-05:00</updated>
+    <id>http://victorzhao1990.github.io/blog/2015/01/24/how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[LeetCode Decode Ways]]></title>
