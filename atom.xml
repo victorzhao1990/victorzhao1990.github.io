@@ -4,7 +4,7 @@
   <title><![CDATA[Victor Zhao's Blog]]></title>
   <link href="http://victorzhao1990.github.io/atom.xml" rel="self"/>
   <link href="http://victorzhao1990.github.io/"/>
-  <updated>2015-01-24T23:29:18-05:00</updated>
+  <updated>2015-01-24T23:35:37-05:00</updated>
   <id>http://victorzhao1990.github.io/</id>
   <author>
     <name><![CDATA[Victor Zhao]]></name>
@@ -25,25 +25,25 @@
 <p>First, let’s upload the input file to the file directory in the VM by using <code>scp</code> command.
 	# upload: local -&gt; remote
 	scp local_file user@remote_host:remote_file
-<img src="images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage.png" alt="" /></p>
+<img src="http://victorzhao1990.github.io/images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage.png" alt="" /></p>
 
 <p>Now, we can check whether our input file has been uploaded into the sandbox, and put it into HDFS.
-<img src="images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-1.png" alt="" />
+<img src="http://victorzhao1990.github.io/images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-1.png" alt="" />
 Using the <code>hadoop fs -put</code> can easily put the input file into HDFS.
-<img src="images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-2.png" alt="" />
+<img src="http://victorzhao1990.github.io/images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-2.png" alt="" />
 Here, I also use <code>hadoop fs -ls</code> to check any specific HDFS directory. You may have already found that it quite similar to the Unix command <code>ls</code>. In fact, most of HDFS command map to the common Unix commands, so it may be familiar to the CLI users.</p>
 
 <p>One more thing, if there is no such <code>/user/hadoop/hw3/input/</code> in HDFS, you may use <code>hadoop fs -mkdir</code> to create first.</p>
 
 <p>Then, I will locate my mapreduce jar file and use <code>hadoop jar</code> command to execute the program.
 	hadoop jar <em>YourJarFile</em> <em>DriverClassName</em> /your/input/file/location /your/output/file/location
-<img src="images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-3.png" alt="" /></p>
+<img src="http://victorzhao1990.github.io/images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-3.png" alt="" /></p>
 
 <p>When it finishes the job, you may check out the output within your HDFS by using <code>hadoop fs -cat</code>. The output file is named as  part-r-00000.
-<img src="images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-4.png" alt="" /></p>
+<img src="http://victorzhao1990.github.io/images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-4.png" alt="" /></p>
 
 <p>Last but not the least, it is also possible to retrieve the output file from HDFS to local file system by using <code>hadoop fs -get</code>.
-<img src="images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-5.png" alt="" /></p>
+<img src="http://victorzhao1990.github.io/images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-5.png" alt="" /></p>
 ]]></content>
   </entry>
   
