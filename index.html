@@ -105,9 +105,10 @@ Here, I also use <code>hadoop fs -ls</code> to check any specific HDFS directory
 
 <p>One more thing, if there is no such <code>/user/hadoop/hw3/input/</code> in HDFS, you may use <code>hadoop fs -mkdir</code> to create first.</p>
 
-<p>Then, I will locate my mapreduce jar file and use <code>hadoop jar</code> command to execute the program.
-	hadoop jar <em>YourJarFile</em> <em>DriverClassName</em> /your/input/file/location /your/output/file/location
-<img src="/images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-3.png" alt="" /></p>
+<p>Then, I will locate my mapreduce jar file and use <code>hadoop jar</code> command to execute the program.</p>
+
+<pre><code>hadoop jar *YourJarFile* *DriverClassName* /your/input/file/location /your/output/file/location ![](/images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-3.png)
+</code></pre>
 
 <p>When it finishes the job, you may check out the output within your HDFS by using <code>hadoop fs -cat</code>. The output file is named as  part-r-00000.
 <img src="/images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage-4.png" alt="" /></p>
