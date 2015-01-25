@@ -4,7 +4,7 @@
   <title><![CDATA[Victor Zhao's Blog]]></title>
   <link href="http://victorzhao1990.github.io/atom.xml" rel="self"/>
   <link href="http://victorzhao1990.github.io/"/>
-  <updated>2015-01-24T23:50:22-05:00</updated>
+  <updated>2015-01-24T23:51:37-05:00</updated>
   <id>http://victorzhao1990.github.io/</id>
   <author>
     <name><![CDATA[Victor Zhao]]></name>
@@ -24,8 +24,8 @@
 
 <p>First, let’s upload the input file to the file directory in the VM by using <code>scp</code> command.</p>
 
-<pre><code># upload: local -&gt; 
-remote scp local_file user@remote_host:remote_file
+<pre><code># upload: local -&gt; remote 
+scp local_file user@remote_host:remote_file
 </code></pre>
 
 <p><img src="http://victorzhao1990.github.io/images/2015-01-24-how-to-use-hortonworks-sandbox-to-run-a-mapreduce-program/DraggedImage.png" alt="" /></p>
